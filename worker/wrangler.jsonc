@@ -1,0 +1,22 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "blueprint-ai",
+    "main": "src/index.ts",
+    "compatibility_date": "2025-01-01",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ],
+    "kv_namespaces": [
+        {
+            "binding": "METADATA",
+            "id": "2d7fe93676ca41c9b362fc44a59aaa85",
+            "remote": true
+        },
+    ],
+    "r2_buckets": [
+        {
+            "binding": "FILES",
+            "bucket_name": "blueprint-ai-files"
+        },
+    ],
+}
